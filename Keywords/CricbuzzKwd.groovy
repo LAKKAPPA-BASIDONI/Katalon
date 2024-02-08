@@ -50,7 +50,7 @@ public class CricbuzzKwd {
 		WebUI.click(locator.firstMatch())
 		WebUI.click(locator.scoreCardLink())
 		Cricketformat = WebUI.getText(locator.formatName())
-		println("******** "+Cricketformat+" *********")
+		println("***ABC***** "+Cricketformat+" ***ABC******")
 	}
 
 	def playerInformationCollect(String teamName) {
