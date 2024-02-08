@@ -12,6 +12,7 @@ import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testcase.TestCase
 import com.kms.katalon.core.testdata.TestData
 import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
@@ -38,8 +39,9 @@ public class ProductCartKwd {
 
 	def validateProduct() {
 		WebUI.click(pcl.cartMenu())
-		def bool = WebUI.verifyElementVisible(pcl.productName())
-		println(bool)
+		if( WebUI.verifyElementVisible(pcl.productName())) 
+			KeywordUtil.markPassed("product is added to cart section.")
+		else KeywordUtil.markFailed("product not added to cart section.")
 	}
 
 	def close() {

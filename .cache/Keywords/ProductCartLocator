@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "8D97669DF3C19BB0D16A13B722CA4A84",
+  "keywordFileContentHash": "F62A7035F960A11F67A42CC1B61FAE4F",
   "keywordClasses": [
     {
       "name": "ProductCartLocator",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

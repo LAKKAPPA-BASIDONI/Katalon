@@ -6,14 +6,20 @@
    <elementGuidId>f4c38e4a-ec8b-42c0-afac-ac5864150256</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id=&quot;userEmail&quot;]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//input[@formcontrolname=&quot;userEmail&quot;]</value>
+      <webElementGuid>0b3dc663-7d84-4318-90dd-820613604c77</webElementGuid>
+   </webElementXpaths>
 </WebElementEntity>

@@ -20,26 +20,26 @@ import internal.GlobalVariable
 
 public class ProductCartLocator {
 	def TestObject useremail() {
-		return findTestObject("Object Repository/ProductCart_ObjectRepository/input_userEmail")
+		return findTestObject('Object Repository/ProductCart_ObjectRepository/input_userEmail')
 	}
 
 	def TestObject password() {
-		return findTestObject("Object Repository/ProductCart_ObjectRepository/input_userPassword")
+		return findTestObject('Object Repository/ProductCart_ObjectRepository/input_userPassword')
 	}
 
 	def TestObject login() {
-		return findTestObject("Object Repository/ProductCart_ObjectRepository/input_login")
+		return findTestObject('Object Repository/ProductCart_ObjectRepository/input_login')
 	}
 
 	def TestObject firstProduct() {
-		return findTestObject("Object Repository/ProductCart_ObjectRepository/button_firstProduct")
+		return findTestObject('Object Repository/ProductCart_ObjectRepository/button_firstProduct')
 	}
 
 	def TestObject cartMenu() {
-		return findTestObject("Object Repository/ProductCart_ObjectRepository/button_cartMenu")
+		return findTestObject('Object Repository/ProductCart_ObjectRepository/button_cartMenu')
 	}
 
 	def TestObject productName() {
-		return findTestObject("Object Repository/ProductCart_ObjectRepository/txt_productNameValidation")
+		return findTestObject('Object Repository/ProductCart_ObjectRepository/txt_productNameValidation')
 	}
 }

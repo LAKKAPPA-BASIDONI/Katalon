@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "5C135577ABEA7142A6448458B2FE1BF1",
+  "keywordFileContentHash": "16A6661837E6FB3A79114C605DF1B036",
   "keywordClasses": [
     {
       "name": "ProductCartKwd",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
