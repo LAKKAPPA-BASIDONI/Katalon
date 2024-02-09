@@ -50,11 +50,17 @@ public class CricbuzzKwd {
 		WebUI.click(locator.firstMatch())
 		WebUI.click(locator.scoreCardLink())
 		Cricketformat = WebUI.getText(locator.formatName())
+<<<<<<< Updated upstream
 		println("***ABC***** "+Cricketformat+" ***ABC******")
+||||||| Stash base
+		println("******** "+Cricketformat+" *********")
+=======
+		println("***DEF***** "+Cricketformat+" ***DEF******")
+>>>>>>> Stashed changes
 	}
 
 	def playerInformationCollect(String teamName) {
-		
+
 		String frm = null;
 		if(Cricketformat.contains("Test")) {
 			frm = "Test"
@@ -63,7 +69,7 @@ public class CricbuzzKwd {
 		}else if(Cricketformat.contains("ODI")){
 			frm = "ODI"
 		}
-		
+
 		println("frm  ::"+frm)
 		for(int i=1; i<=11;i++) {
 
