@@ -50,13 +50,10 @@ public class CricbuzzKwd {
 		WebUI.click(locator.firstMatch())
 		WebUI.click(locator.scoreCardLink())
 		Cricketformat = WebUI.getText(locator.formatName())
-<<<<<<< Updated upstream
-		println("***ABC***** "+Cricketformat+" ***ABC******")
-||||||| Stash base
-		println("******** "+Cricketformat+" *********")
-=======
-		println("***DEF***** "+Cricketformat+" ***DEF******")
->>>>>>> Stashed changes
+		
+		println("***ABC***** "+Cricketformat+" ***ABC*****CDCD*")
+		
+		
 	}
 
 	def playerInformationCollect(String teamName) {
@@ -92,19 +89,19 @@ public class CricbuzzKwd {
 					average = (String)WebUI.getText(locator.playerAverage(frm))
 					batsman.put(name,average)
 				}
-					break;
+				break;
 
 				case "WK-Batsman" :  if(WebUI.verifyElementVisible(locator.playerAverage(frm))) {
 					average = (String)WebUI.getText(locator.playerAverage(frm))
 					wicketkeeper.put(name,average)
 				}
-					break;
+				break;
 
 				case "Bowler"     :  if(WebUI.verifyElementVisible(locator.playerEconomy(frm))) {
 					String economy = (String)WebUI.getText(locator.playerEconomy(frm))
 					bowler.put(name,economy)
 				}
-					break;
+				break;
 
 				default 		  : if(WebUI.verifyElementVisible(locator.playerAverage(frm))) {
 					average = (String)WebUI.getText(locator.playerAverage(frm))
