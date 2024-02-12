@@ -10,32 +10,21 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-TestObject name = findTestObject("Object Repository/scriptTest1Objects/userEmail")
-WebUI.openBrowser("")
-WebUI.navigateToUrl("https://rahulshettyacademy.com/loginpagePractise/")
+import internal.GlobalVariable
 
-WebUI.executeJavaScript("window.open('https://www.educative.io/', '_blank')", null)
-WebUI.setText(name, "lakkappa")
+import org.openqa.selenium.By.ByXPath
+import org.openqa.selenium.Keys
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebDriver as Keys
 
-WebUI.setText(findTestObject("Object Repository/scriptTest1Objects/userPassword"), "basidoni")
-WebUI.click(findTestObject("Object Repository/scriptTest1Objects/loginBtn"))
-
-WebUI.executeJavaScript("window.open('https://www.educative.io/', '_blank')", null)
-
-WebUI.switchToWindowIndex(0);
-WebUI.delay(3);
-//WebUI.switchToWindowIndex(1);
-//WebUI.delay(3);
-//WebUI.switchToWindowIndex(2);
-//WebUI.delay(3);
-
-
-//WebUI.verifyElementText(findTestObject, null)
-//WebUI.verifyElementVisible(findTestObject)
-//WebUI.verifyEqual(findWindowsObject, findTestCase)
+WebUI.openBrowser("https://the-internet.herokuapp.com/download")
+WebDriver driver =   DriverFactory.getWebDriver();
+driver.findElement(ByXPath.xpath("//a[text()='test-file.txt']")).click();
+WebUI.delay(10);
+KeywordUtil.logInfo("lodinfo")
