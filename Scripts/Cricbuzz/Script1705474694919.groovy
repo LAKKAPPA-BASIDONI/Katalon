@@ -32,4 +32,3 @@ CricbuzzKwd cricbuzz = new CricbuzzKwd()
 	cricbuzz.chooseAllrounder(2)
 	cricbuzz.playing11Team()
 	cricbuzz.close()
-

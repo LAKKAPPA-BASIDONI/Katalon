@@ -23,8 +23,15 @@ import org.openqa.selenium.Keys
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebDriver as Keys
 
-WebUI.openBrowser("https://the-internet.herokuapp.com/download")
-WebDriver driver =   DriverFactory.getWebDriver();
-driver.findElement(ByXPath.xpath("//a[text()='test-file.txt']")).click();
-WebUI.delay(10);
-KeywordUtil.logInfo("lodinfo")
+//WebUI.openBrowser("https://the-internet.herokuapp.com/download")
+//WebDriver driver =   DriverFactory.getWebDriver();
+//driver.findElement(ByXPath.xpath("//a[text()='test-file.txt']")).click();
+//WebUI.delay(10);
+//KeywordUtil.logInfo("lodinfo")
+
+/*
+ * create function named login whichreceives 2 paraeters: username and password;
+ * Enter username in input_username textox on page_home
+ * Enter password in input_password text box
+ * click inputloin button
+ */
