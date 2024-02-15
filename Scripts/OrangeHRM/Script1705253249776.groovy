@@ -25,7 +25,7 @@ import org.openqa.selenium.Keys as Keys
 //OrangeHrmKwd orange = new OrangeHrmKwd()
 OrangeHrmKwd orange = new OrangeHrmKwd()
 orange.openOrangeHRM()
-orange.login()
+orange.login( username, password)
 
 orange.closeBrowser()
 //

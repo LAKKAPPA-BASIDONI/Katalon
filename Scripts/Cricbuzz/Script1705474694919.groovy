@@ -22,7 +22,7 @@ import org.openqa.selenium.WebElement as Keys
 CricbuzzKwd cricbuzz = new CricbuzzKwd()
 
 	cricbuzz.open()
-	cricbuzz.navigateToScoreCard()
+	//cricbuzz.navigateToScoreCard()
 	cricbuzz.playerInformationCollect("teamA")
 	cricbuzz.playerInformationCollect("teamB")
 	cricbuzz.printPlayerInformation()
@@ -32,3 +32,33 @@ CricbuzzKwd cricbuzz = new CricbuzzKwd()
 	cricbuzz.chooseAllrounder(2)
 	cricbuzz.playing11Team()
 	cricbuzz.close()
+/*ksjd
+ * navigate to cricbuzz url
+ * open the up comming maches  select latest one and verify teams name 
+ * goto squad menu and collect team 11 information for both team
+ * predict best playing 11 player.
+ */
+	
+/*df
+ * Jenkins pipelin script.
+ * 
+ * pipeline{
+ * agent any
+ * 		stages{
+ * 			stage('checkout'){
+ * 				steps{
+ * 					deleteDir();
+ * 					checkout([
+ * 							$class : 'GITSCM',
+ * 							branch : [[name: 'main']],
+ * 							userRemoteConfigs: [[ url:'git hub repository url']]
+ * 					})
+ * 			}
+ * 			stage('TEST'){
+ * 				steps{
+ *                  bat """   """
+ *                  	}
+ *                  }
+ * }
+ * }
+ */

@@ -28,9 +28,9 @@ public class OrangeHrmKwd {
 		WebUI.openBrowser("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 	}
 
-	def login() {
-		WebUI.setText(locate.Username(), "Admin")
-		WebUI.setText(locate.inputUserPassword(), 'admin123')
+	def login(username,password) {
+		WebUI.setText(locate.Username(), username)
+		WebUI.setText(locate.inputUserPassword(), password)
 		WebUI.click(locate.buttonSubmit())
 	}
 
