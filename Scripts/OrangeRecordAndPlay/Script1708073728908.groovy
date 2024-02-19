@@ -15,48 +15,25 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys
-import org.openqa.selenium.WebElement
-import org.openqa.selenium.WebElement as Keys
+import org.openqa.selenium.Keys as Keys
 
-CricbuzzKwd cricbuzz = new CricbuzzKwd()
+WebUI.openBrowser('')
 
-	cricbuzz.open()
-	cricbuzz.navigateToScoreCard()
-	cricbuzz.playerInformationCollect("teamA")
-	//cricbuzz.playerInformationCollect("teamB")
-	cricbuzz.printPlayerInformation()
-	cricbuzz.chooseBatsman(4)
-	cricbuzz.chooseBowler(4)
-	cricbuzz.chooseWicketKeeper(1)
-	cricbuzz.chooseAllrounder(2)
-	cricbuzz.playing11Team()
-	cricbuzz.close()
-/*
- * navigate to cricbuzz url
- * 
- */
-	
-/*
- * Jenkins pipelin script.
- * 
- * pipeline{
- * agent any
- * 		stages{
- * 			stage('checkout'){
- * 				steps{
- * 					deleteDir();
- * 					checkout([
- * 							$class : 'GITSCM',
- * 							branch : [[name: 'main']],
- * 							userRemoteConfigs: [[ url:'git hub repository url']]
- * 					})
- * 			}
- * 			stage('TEST'){
- * 				steps{
- *                  bat """   """
- *                  	}
- *                  }
- * }
- * }
- */
+WebUI.navigateToUrl('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+
+WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input_username'), 'admin')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input_password'), 'hUKwJTbofgPU9eVlw/CnDQ==')
+
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/button_Login'))
+
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/a_Claim'))
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+
+WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input_username'), 'admin')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input_password'), 'hUKwJTbofgPU9eVlw/CnDQ==')
+
