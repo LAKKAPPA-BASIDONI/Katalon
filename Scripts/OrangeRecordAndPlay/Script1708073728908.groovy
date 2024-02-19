@@ -25,15 +25,14 @@ WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input_username'),
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input_password'), 'hUKwJTbofgPU9eVlw/CnDQ==')
 
-WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/button_Login'))
+WebUI.sendKeys(findTestObject('Object Repository/Page_OrangeHRM/input_password'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/a_Claim'))
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/a_Time'))
 
-WebUI.openBrowser('')
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/i_oxd-icon bi-chevron-down'))
 
-WebUI.navigateToUrl('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/a_My Records'))
 
-WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input_username'), 'admin')
+WebUI.verifyElementText(findTestObject('Object Repository/Page_OrangeHRM/h5_My Attendance Records'), 'My Attendance Records')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input_password'), 'hUKwJTbofgPU9eVlw/CnDQ==')
-
+WebUI.closeBrowser()

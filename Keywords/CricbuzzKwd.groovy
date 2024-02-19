@@ -58,7 +58,8 @@ public class CricbuzzKwd {
 		String frm = null;
 		if(Cricketformat.contains("Test")) {
 			frm = "Test"
-		}else if(Cricketformat.contains("T20I")){
+		}else if(Cricketformat.contains("T20I")
+			){
 			frm = "T20I"
 		}else if(Cricketformat.contains("ODI")){
 			frm = "ODI"
