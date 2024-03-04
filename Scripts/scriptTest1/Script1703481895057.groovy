@@ -19,15 +19,19 @@ import internal.GlobalVariable
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys as Keys
 
-TestObject name = findTestObject("Object Repository/scriptTest1Objects/userEmail")
 
+WebUI.openBrowser("https://rahulshettyacademy.com/loginpagePractise/")
 
-
-WebUI.openBrowser("")
-WebUI.navigateToUrl("https://rahulshettyacademy.com/loginpagePractise/")
-WebUI.setText(name, "rahulshettyacademy")
+WebUI.setText(findTestObject("Object Repository/scriptTest1Objects/userEmail"), "rahulshettyacademy")
 
 WebUI.setText(findTestObject("Object Repository/scriptTest1Objects/userPassword"), "learning")
+
 WebUI.click(findTestObject("Object Repository/scriptTest1Objects/loginBtn"))
-//  WebUI.verifyElementText(findTestObject('Object Repository/Page_CURA Healthcare Service/h2_Make Appointment'), 'Make Appointment', FailureHandling.STOP_ON_FAILURE)
+
 WebUI.closeBrowser()
+
+//  open the browser with urlexample2
+//  Enter the user name "rahulshettyacademy"
+//  Enter the password "learning"
+//  Click on login button
+//  Close browser

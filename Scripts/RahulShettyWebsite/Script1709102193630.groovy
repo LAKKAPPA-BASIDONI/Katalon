@@ -15,22 +15,32 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys
-import org.openqa.selenium.WebElement
-import org.openqa.selenium.WebElement as Keys
+import org.openqa.selenium.Keys as Keys
 
-CricbuzzKwd cricbuzz = new CricbuzzKwd()
+'Open  browser'
+WebUI.openBrowser('')
 
-	cricbuzz.open()
-	cricbuzz.navigateToScoreCard()
-	cricbuzz.playerInformationCollect("teamA")
-	cricbuzz.playerInformationCollect("teamB")
-	cricbuzz.printPlayerInformation()
-	cricbuzz.chooseBatsman(4)
-	cricbuzz.chooseBowler(4)
-	cricbuzz.chooseWicketKeeper(1)
-	cricbuzz.chooseAllrounder(2)
-	cricbuzz.playing11Team()
-	cricbuzz.close()
+'navigate to "https://rahulshettyacademy.com/client/"'
+WebUI.navigateToUrl('https://rahulshettyacademy.com/client/')
 
-CustomKeywords.ch
+'Enter user name'
+WebUI.setText(findTestObject('Object Repository/RahulShettyWebsite_OR/Login_page/inputuserEmail'), 'anshika@gmail.com')
+
+'Enter password'
+WebUI.setEncryptedText(findTestObject('Object Repository/RahulShettyWebsite_OR/Login_page/inputuserPassword'), 'VhOGoIbq1ebZ2Sfaadxugg==')
+
+'Click on Sign in button'
+WebUI.click(findTestObject('Object Repository/RahulShettyWebsite_OR/Login_page/input_login'))
+
+'Cart first product in product list'
+WebUI.click(findTestObject('Object Repository/RahulShettyWebsite_OR/Shoping_page/button_AddToCart'))
+
+'Click on cart button'
+WebUI.click(findTestObject('Object Repository/RahulShettyWebsite_OR/Shoping_page/button_Cart'))
+
+'Verify cart product Element is visible'
+WebUI.waitForElementVisible(findTestObject('Object Repository/RahulShettyWebsite_OR/Shoping_page/Cart_page/h3_ZARA_COAT_3'), 0)
+
+'Close browser'
+WebUI.closeBrowser()
+

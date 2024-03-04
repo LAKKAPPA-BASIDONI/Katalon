@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h3_ZARA_COAT_3</name>
+   <tag></tag>
+   <elementGuidId>0498aa63-5d40-4f15-a6f5-d9a163d36d83</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.cartSection > h3</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div/div/h3</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h3</value>
+      <webElementGuid>3fb6bfae-68a9-4ebe-96e3-c9e239d037fc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>ZARA COAT 3</value>
+      <webElementGuid>fb4c6f17-5601-43af-b7a1-4dae39a69dae</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/app-root[1]/app-profile[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;wrap cf&quot;]/div[@class=&quot;cart&quot;]/ul[@class=&quot;cartWrap ng-star-inserted&quot;]/li[@class=&quot;items even ng-star-inserted&quot;]/div[@class=&quot;infoWrap&quot;]/div[@class=&quot;cartSection&quot;]/h3[1]</value>
+      <webElementGuid>d4e67bf8-c3b6-481f-bbf8-42835d1c9929</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/h3</value>
+      <webElementGuid>b358c67e-518a-4966-9a60-6dca0750f1ce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h3[(text() = 'ZARA COAT 3' or . = 'ZARA COAT 3')]</value>
+      <webElementGuid>1caf6201-6544-4c3c-ae2d-5679e8110adf</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
